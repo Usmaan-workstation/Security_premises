@@ -1,23 +1,170 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-# Autonomous Compliance Fabric (ACF) & Open-Source SIEM Pipeline
+# Autonomous Compliance Fabric
 
-[![License: MIT](https://badge.fury.io/gh/gitandfox%2Fsecops-grc-fabric.svg)](https://opensource.org/licenses/MIT)
-[![Security Directives: Zero-Trust](https://img.shields.io/badge/Security-Zero--Trust-blueviolet)](#)
-[![Architecture: Hybrid AI](https://img.shields.io/badge/Architecture-Hybrid%20AI-orange)](#)
+> AI-Driven Governance, Risk & Compliance Platform for Continuous Compliance Monitoring
 
-## 📋 Overview
+## Overview
 
-Modern startups and lean enterprise teams face a dual challenge: maintaining a robust, proactive security posture while satisfying rigid compliance frameworks (SOC2, ISO 27001, NIST) without massive compliance departments. 
+Autonomous Compliance Fabric is a security architecture project that demonstrates how Artificial Intelligence can automate Governance, Risk & Compliance (GRC) operations within regulated enterprise environments.
 
-This repository hosts the **Autonomous Compliance Fabric (ACF)** integrated with an enterprise-grade, open-source **SIEM Pipeline**. The core approach bridges the gap between **runtime threat detection** and **continuous compliance auditing** through a hybrid, zero-trust AI architecture. 
+The platform was designed to reduce manual compliance effort by continuously collecting technical evidence, evaluating security controls against multiple frameworks, and generating platform-specific remediation guidance while ensuring that sensitive infrastructure data never leaves the organization's network.
 
-### The Core Philosophy
-* **Local Data Sovereignty:** Raw infrastructure configurations, logs, and sensitive evidence never leave your trust boundary.
-* **Continuous, Not Static:** Traditional GRC is point-in-time; ACF converts continuous SIEM telemetry into automated compliance evidence.
-* **Deterministic AI Remediation:** AI is utilized at the orchestration and mapping layer, while remediation actions are executed via strict, version-controlled infrastructure-as-code (IaC) playbooks.
+The architecture follows Zero Trust principles and is intended for highly regulated sectors including financial institutions, healthcare, government, and critical infrastructure.
 
 ---
 
-## 🛠️ Architecture & Tools Integration
+## Objectives
 
-The fabric merges market-leading open-source security utilities into a unified, telemetry-driven ecosystem:
+* Automate continuous compliance assessment
+* Reduce manual evidence collection
+* Generate AI-assisted remediation guidance
+* Support multiple compliance frameworks
+* Maintain complete on-premises processing of sensitive data
+* Provide executive-level compliance visibility
+
+---
+
+## Key Features
+
+* Continuous compliance assessment every four hours
+* AI-assisted compliance gap analysis
+* OS-specific remediation recommendations
+* Multi-framework control mapping
+* Retrieval-Augmented Generation (RAG)
+* Local LLM deployment (no sensitive cloud processing)
+* Cryptographically signed telemetry
+* Zero Trust architecture
+* Read-only endpoint assessment
+* Executive dashboard architecture
+
+---
+
+## Supported Frameworks
+
+* ISO 27001:2022
+* NIST SP 800-53
+* PCI DSS
+* CIS Benchmarks
+
+The architecture is extensible to support additional frameworks such as DORA, UAE IA Regulations, SAMA CSF, and others.
+
+---
+
+## High-Level Architecture
+
+Compliance Server
+
+↓
+
+Endpoint Data Collection (Windows & Linux)
+
+↓
+
+Evidence Normalization
+
+↓
+
+AI Analysis (Local LLM)
+
+↓
+
+Control Mapping (RAG)
+
+↓
+
+Remediation Generation
+
+↓
+
+Telemetry Signing
+
+↓
+
+Executive Dashboard
+
+---
+
+## Technology Stack
+
+Infrastructure
+
+* Ubuntu Server
+* VMware / Proxmox
+
+Artificial Intelligence
+
+* Mistral 7B
+* llama.cpp
+* LangChain
+
+Data
+
+* Qdrant Vector Database
+
+Security
+
+* HashiCorp Vault
+* Ed25519 Digital Signatures
+* AES-256-GCM
+* TLS 1.3
+
+Backend
+
+* Python
+* FastAPI
+* APScheduler
+
+Cloud
+
+* AWS API Gateway
+* AWS Lambda
+* AWS KMS
+
+---
+
+## Security Principles
+
+* Zero Trust
+* Least Privilege
+* Read-only endpoint collection
+* Local processing of sensitive data
+* Cryptographic integrity verification
+* Segregated trust zones
+* Secure secret management
+
+---
+
+## Repository Contents
+
+```
+docs/
+    Architecture Whitepaper.pdf
+
+diagrams/
+    Network Architecture
+    Trust Boundaries
+    Data Flow
+
+screenshots/
+    Dashboard Mockups
+```
+
+---
+
+## Current Status
+
+* Architecture Complete
+* Threat Model Complete
+* Security Design Complete
+* Technology Evaluation Complete
+* Implementation Roadmap Complete
+
+Implementation is currently being expanded into a functional prototype.
+
+---
+
+## Author
+
+Muhammad Usman Saeed
+
+Information Security Engineer | SOC Analyst | GRC Practitioner
