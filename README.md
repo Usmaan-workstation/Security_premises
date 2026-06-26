@@ -1,3 +1,4 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 # Autonomous Compliance Fabric (ACF) & Open-Source SIEM Pipeline
 
 [![License: MIT](https://badge.fury.io/gh/gitandfox%2Fsecops-grc-fabric.svg)](https://opensource.org/licenses/MIT)
