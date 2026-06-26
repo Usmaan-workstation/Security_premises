@@ -1,1 +1,6 @@
+# Vector Pipeline Configuration Placeholder
+# This configuration will handle data ingestion, enrichment with MITRE ATT&CK tags, and routing.
 
+[sources.wazuh_alerts]
+type = "file"
+include = ["/var/ossec/logs/alerts/alerts.json"]
